@@ -20,7 +20,7 @@
                     console.log(cardset[i].style.display);
                     if (cardset[i].style.display != "none"){
                         console.log("Part 2 Successful");
-                        console.log(document.getElementByClassName("card-body")[i].offsetHeight);
+                        console.log(cardset.getElementsByClassName("card-body")[0].offsetHeight);
                     }
                 }
             }
