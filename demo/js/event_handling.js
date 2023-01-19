@@ -20,7 +20,7 @@
                         console.log(document.getElementsByClassName("card-body"));
                         console.log(hvalue);
                         const thresh = hvalue + 255;
-                        if (thresh >= 90vh){
+                        if (thresh >= window.innerHeight * .9){
                             document.getElementById("gOverlay").style.display = "block";
                         }
                     }
