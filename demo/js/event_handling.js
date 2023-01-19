@@ -15,6 +15,7 @@
                 const cardset = document.getElementsByClassName("card-left");
                 for (i = 0; i < cardset.length; i++){
                     if (cardset[i].style.display != "none"){
+                        console.log(i);
                         console.log(document.getElementsByClassName("card-body")[i].offsetHeight);
                     }
                 }
