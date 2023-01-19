@@ -16,8 +16,12 @@
                 for (i = 0; i < cardset.length; i++){
                     if (cardset[i].style.display != "none"){
                         console.log(i);
+                        const hvalue = document.getElementsByClassName("card-body")[i+1].offsetHeight;
                         console.log(document.getElementsByClassName("card-body"));
-                        console.log(document.getElementsByClassName("card-body")[i+1].offsetHeight);
+                        console.log(hvalue);
+                        if (hvalue + 255 >= 90vh){
+                            document.getElementById("gOverlay").style.display = "block";
+                        }
                     }
                 }
             }
@@ -26,6 +30,7 @@
         // On shape unhighlight (mouseout shape) hide the card.
         $.imageMapProEventUnhighlightedShape = function (imageMapName, shapeName) {
             $(`#card-${shapeName}`).hide();
+            document.getElementById("gOverlay").style.display = "none";
         }
 
         // On shape click, dynamically set the modal content to correspond to the shape. 
