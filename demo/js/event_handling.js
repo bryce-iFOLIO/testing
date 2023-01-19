@@ -19,7 +19,8 @@
                         const hvalue = document.getElementsByClassName("card-body")[i+1].offsetHeight;
                         console.log(document.getElementsByClassName("card-body"));
                         console.log(hvalue);
-                        if (hvalue + 255 >= 90vh){
+                        const thresh = hvalue + 255;
+                        if (thresh >= 90vh){
                             document.getElementById("gOverlay").style.display = "block";
                         }
                     }
