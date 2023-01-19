@@ -17,7 +17,7 @@
                     if (cardset[i].style.display != "none"){
                         console.log(i);
                         console.log(document.getElementsByClassName("card-body"));
-                        console.log(document.getElementsByClassName("card-body")[i].offsetHeight);
+                        console.log(document.getElementsByClassName("card-body")[i+1].offsetHeight);
                     }
                 }
             }
