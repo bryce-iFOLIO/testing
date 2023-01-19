@@ -16,10 +16,11 @@
                 const cardset = document.getElementsByClassName("card-left");
                 for (i = 0; i < cardset.length; i++){
                     console.log("Part 1 Successful");
+                    console.log(i);
                     console.log(cardset[i].style.display);
                     if (cardset[i].style.display != "none"){
                         console.log("Part 2 Successful");
-                        console.log(cardset.getElementByClassName("card-body")[0].offsetHeight);
+                        console.log(document.getElementByClassName("card-body")[i].offsetHeight);
                     }
                 }
             }
